@@ -134,9 +134,8 @@ export function buildConfig(state, config = {}) {
     basePath = cleanSlashes(config.basePath)
     assetsPath = config.assetsPath || paths.assets || assetsPath
   }
-  const publicPath = `"./"`, {
-    leading: false,
-  })}/`
+   const publicPath = './'
+)}/
 
   if (assetsPath && !isAbsoluteUrl(assetsPath)) {
     assetsPath = `/${cleanSlashes(`${basePath}/${assetsPath}`)}/`
