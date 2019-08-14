@@ -14,7 +14,7 @@ const DEFAULT_NAME_FOR_STATIC_CONFIG_FILE = 'static.config.js'
 const DEFAULT_PATH_FOR_STATIC_CONFIG = nodePath.resolve(
   nodePath.join(process.cwd(), DEFAULT_NAME_FOR_STATIC_CONFIG_FILE)
 )
-const DEFAULT_ROUTES = [{ path: '/' }]
+const DEFAULT_ROUTES = [{ path: '' }]
 const DEFAULT_ENTRY = 'index.js'
 const DEFAULT_EXTENSIONS = ['.js', '.jsx']
 
@@ -122,7 +122,7 @@ export function buildConfig(state, config = {}) {
   let siteRoot = ''
   let basePath = ''
   let assetsPath = ''
- 
+
    const publicPath = './'
 )}/
 
