@@ -122,18 +122,7 @@ export function buildConfig(state, config = {}) {
   let siteRoot = ''
   let basePath = ''
   let assetsPath = ''
-  if (process.env.REACT_STATIC_ENV === 'development') {
-    basePath = cleanSlashes(config.devBasePath)
-    assetsPath = config.devAssetsPath || paths.assets || assetsPath
-  } else if (state.staging) {
-    siteRoot = cutPathToRoot(config.stagingSiteRoot || '/', '$1')
-    basePath = cleanSlashes(config.stagingBasePath)
-    assetsPath = config.stagingAssetsPath || paths.assets || assetsPath
-  } else {
-    siteRoot = cutPathToRoot(config.siteRoot || '/', '$1')
-    basePath = cleanSlashes(config.basePath)
-    assetsPath = config.assetsPath || paths.assets || assetsPath
-  }
+ 
    const publicPath = './'
 )}/
 
