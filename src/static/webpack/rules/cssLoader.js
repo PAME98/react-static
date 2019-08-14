@@ -21,7 +21,7 @@ function initCSSLoader() {
         plugins: () => [
           postcssFlexbugsFixes,
           autoprefixer({
-            overrideBrowserslist: [
+            browsers: [
               '>1%',
               'last 4 versions',
               'Firefox ESR',

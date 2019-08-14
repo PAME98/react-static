@@ -37,8 +37,6 @@ declare module 'react-static' {
     stagingBasePath?: string
     devBasePath?: string
     assetsPath?: string
-    stagingAssetsPath?: string
-    devAssetsPath?: string
     extractCssChunks?: boolean
     inlineCss?: boolean
     disablePreload?: boolean
